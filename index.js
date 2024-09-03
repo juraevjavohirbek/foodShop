@@ -128,7 +128,7 @@ searchBtn.addEventListener('click', ()=>{
   const meals = document.querySelectorAll('.meal');
 
   meals.forEach(meal =>{
-    const mealTitle = meal.querySelector('.meal-title').textContent.toLowerCase().trim();
+    const mealTitle = meal.querySelector('.meal-title').textContent.trim();
 
     if (mealTitle.includes(searchItem) || searchItem === ''){
       meal.style.display = 'block'
